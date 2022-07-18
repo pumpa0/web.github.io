@@ -1,0 +1,538 @@
+@font-face {
+    font-family: "Boo";
+    src: url(../fonts/ibx.ttf)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0
+}
+
+a {
+    color: #222;
+    text-decoration: none
+}
+
+.senna-loading .senna-loading-bar {
+    animation: shift-rightwards 1s ease-in-out infinite;
+    animation-delay: .4s;
+    display: block
+}
+
+.senna-loading-bar {
+    transform: translateX(100%);
+    background: #222;
+    display: none;
+    height: 3px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000
+}
+
+@keyframes shift-rightwards {
+    0% {
+        transform: translateX(-100%)
+    }
+    40%,
+    60% {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+.marginUp {
+    margin-top: 10px
+}
+
+#rightText,
+#skipRef {
+    position: relative;
+    top: 8px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Boo';
+}
+
+h2 {
+    font-size: 19px
+}
+
+.container {
+    border: 0;
+    margin: 50px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    max-width: 620px;
+}
+
+@media (min-width:641px) {
+    .container {
+        border-left: 2px dotted #222;
+        border-right: 2px dotted #222;
+    }
+}
+
+header {
+    background: #222;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    color: #fff;
+    z-index: 5;
+    max-width: 620px
+}
+
+header h1 {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0 0 0;
+    position: relative;
+    top: 3px;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+header .act {
+    float: right;
+    position: relative;
+    bottom: 20px;
+    font-size: 13px;
+}
+
+header a {
+    color: #fff
+}
+
+footer {
+    background: #222;
+    margin: auto;
+    max-width: 620px;
+    padding: 10px;
+    color: #fff;
+    text-align: center
+}
+
+.status-true {
+    color: #1D9D73;
+    font-weight: 700
+}
+
+.status-false {
+    color: #DC3545;
+    font-weight: 700
+}
+
+.status-netral {
+    color: #fff;
+    font-weight: 700
+}
+
+table {
+    width: 100%
+}
+
+hr {
+    margin: 15px 0 15px 0;
+    border: 1px dotted #222;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+    color: #222
+}
+
+.alert {
+    padding: 10px;
+    margin: 0px 3px 10px 3px;
+    text-align: center;
+    color: #fff;
+}
+
+.alert a {
+    color: #fff;
+    font-weight: 700
+}
+
+.alert-info {
+    background: #007BFF
+}
+
+.alert-danger {
+    background: #DC3545
+}
+
+.alert-success {
+    background: #1D9D73
+}
+
+.alert-warning {
+    background: #FFC107
+}
+
+.profile .userpic {
+    border-radius: 100%;
+    width: 70px;
+    margin: 15px auto 15px auto;
+    padding: 3px;
+    border: 1px dotted #222;
+}
+
+.log-list th:nth-child(1),
+.log-list th:nth-child(3),
+.user-list th:nth-child(1),
+.user-list th:nth-child(3) {
+    width: 30px;
+    text-align: center
+}
+
+.log-list td:nth-child(1),
+.log-list td:nth-child(3),
+.user-list td:nth-child(1),
+.user-list td:nth-child(3) {
+    text-align: center
+}
+
+.statistic th,
+.statistic td,
+.log-list th,
+.log-list td,
+.user-list th,
+.user-list td,
+.profile td {
+    padding: 10px;
+    border-bottom: 1px dotted #222;
+    font-size: 13px
+}
+
+.profile form {
+    padding: 0;
+    margin: 0;
+}
+
+.profile input {
+    display: none;
+}
+
+.statistic td:nth-child(1),
+.profile td:nth-child(1) {
+    width: 70px;
+}
+
+.statistic td:nth-child(2),
+.profile td:nth-child(2) {
+    width: 20px;
+    text-align: center
+}
+
+.statistic td:nth-child(3) {
+    text-align: center
+}
+
+.refferal {
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    background: #eee;
+    font-size: 13px
+}
+
+.stat .last {
+    float: left;
+    font-size: 13px;
+    position: relative;
+    top: 4px
+}
+
+.stat .count {
+    float: right;
+    font-size: 20px;
+    position: relative;
+    bottom: 3px
+}
+
+.pricing {
+    margin-bottom: 15px;
+}
+
+.pricing .package {
+    font-size: 15px
+}
+
+.pricing .limit {
+    font-size: 12px
+}
+
+.pricing .price {
+    float: right;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.pricing button {
+    margin-top: 13px;
+    color: #fff;
+    background: #222;
+    border: 2px solid #222;
+    font-family: Boo;
+    font-size: 14px;
+    padding: 5px 10px
+}
+
+.pricing button:hover {
+    color: #222;
+    background: none;
+    transition: 0.3s
+}
+
+.dev td {
+    padding-bottom: 10px;
+    font-size: 13px
+}
+
+.dev .ic {
+    padding: 10px;
+    background: #eee;
+    text-align: center
+}
+
+.dev td:nth-child(1) {
+    width: 50px
+}
+
+.dev td:nth-child(2) {
+    padding-left: 15px
+}
+
+/* Timeline */
+
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+    line-height: inherit;
+}
+
+.timeline h3 {
+	display: none
+}
+/*----- TIMELINE ITEM -----*/
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+
+.timeline-info {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 2px 0 0 0;
+    margin: 0 0 0.5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 7px;
+}
+
+.timeline-marker:before {
+    background: #222;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 7px;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 7px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timeline-marker:after {
+    content: "";
+    width: 3px;
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 2px solid #222;
+}
+
+/*----- TIMELINE CONTENT -----*/
+
+.timeline-content {
+    padding-bottom: 25px;
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Input Style */
+
+
+.control-group {
+    margin-bottom: 20px
+}
+
+.btn {
+    width: 100%;
+    padding: 7px;
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
+    font-family: Boo;
+    font-size: 14px;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    max-width: 100%
+}
+
+.bar:before,
+.bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #222;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all
+}
+
+.bar:before {
+    left: 50%
+}
+
+.bar:after {
+    right: 50%
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after,
+.bax:focus~.bar:before,
+.bax:focus~.bar:after {
+    width: 50%
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    max-width: 100%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: .5
+}
+
+.input:focus~.highlight {
+    -webkit-animation: inputhighlighter .3s ease;
+    -moz-animation: inputhighlighter .3s ease;
+    animation: inputhighlighter .3s ease
+}
+
+@-webkit-keyframes inputhighlighter {
+    from {
+        background: #222
+    }
+    to {
+        width: 0;
+        background: transparent
+    }
+}
+
+@-moz-keyframes inputhighlighter {
+    from {
+        background: #222
+    }
+    to {
+        width: 0;
+        background: transparent
+    }
+}
+
+@keyframes inputhighlighter {
+    from {
+        background: #222
+    }
+    to {
+        width: 0;
+        background: transparent
+    }
+}
+
+#app-check-key input {
+    padding: 9px
+}
+
+select, textarea,
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    border: 0;
+    background: #FFF;
+    border-bottom: 1px solid #EEE;
+    border-radius: 2px;
+    font-family: "Boo";
+    font-size: 14px;
+    padding: 8px
+}
+
+iframe {
+	width:100%;
+	border:1px dotted #eee;
+	height: 250px;
+}

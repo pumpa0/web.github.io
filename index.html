@@ -1,0 +1,225 @@
+<html><head>
+   <title> List | Neoxr API </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="js/jquery.js" type="text/javascript"></script>
+   <script src="js/tod.js" type="text/javascript"></script>
+   <script src="js/form.js" type="text/javascript"></script>
+   <script src="js/senna-debug.js" type="text/javascript"></script>
+   <style>
+      @import "css/gridlex.css";
+      @import "css/style.css";
+      @import "css/tod.css";
+   </style>
+</head>
+
+<body data-senna="data-senna" data-senna-surface="data-senna-surface">
+   <div class="senna-loading-bar"></div>
+   <header>
+      <h1><a href="/"><span id="header">Neoxr API</span></a></h1>
+      <span class="act"> [  <a href="/authentication">Auth</a>  ] <span>
+   </span></span></header>
+   <div class="container">
+      <div class="grid">
+<div class="col-7_sm-12">
+   <h2> Downloader </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/fb?url=https://fb.watch/7B5KBCgdO3/&apikey=yourkey" target="_blank">Facebook</a><br>
+         ➠ <a href="/api/podcast?url=https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy84YzM1YjljL3BvZGNhc3QvcnNz/episode/YzNiZWQxNTgtMThkYi02YmIxLTZhZjQtZTE5ODA1NTY0MDUz?sa=X&ved=0CAIQuIEEahcKEwjglLLj3sf4AhUAAAAAHQAAAAAQLw&apikey=yourkey" target="_blank">Google Podcast</a><br>
+         ➠ <a href="/api/gore?q=isis&apikey=yourkey" target="_blank">Gore</a><br>
+         ➠ <a href="/api/ig?url=https://www.instagram.com/reel/Ca5CMqaKQE5/&apikey=yourkey" target="_blank">Instagram</a><br>
+         ➠ <a href="/api/igstory?username=hosico_cat&apikey=yourkey" target="_blank">IG Story</a><br>
+         ➠ <a href="/api/line?url=https://timeline.line.me/post/_dTRA6REe6UmFLZyTq-V925XRsH5TzoyFH49FS9w/1162549251303050748&apikey=yourkey" target="_blank">Line</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/mediafire?url=https://www.mediafire.com/file/a8cermi1xtwwnk7/GBWA_MiNi_v2.0_SamMods.apk/file&apikey=yourkey" target="_blank">Mediafire</a><br>
+         ➠ <a href="/api/pin?url=https://pin.it/5fXaAWE&apikey=yourkey" target="_blank">Pinterest (All Media)</a><br>
+         ➠ <a href="/api/tiktok?url=https://vt.tiktok.com/ZSJ7CgDUC&apikey=yourkey" target="_blank">Tiktok</a><br>
+         ➠ <a href="/api/tiktokfull?url=https://vt.tiktok.com/ZSJ7CgDUC&apikey=yourkey" target="_blank">Tiktok (Full Info)</a><br>
+         ➠ <a href="/api/twitter?url=https://twitter.com/sebatass_kata/status/1409031803290099716?s=20&apikey=yourkey" target="_blank">Twitter (All Media)</a><br>
+      </div>
+   </div>
+   <hr>
+   <h2> Games </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/asahotak?apikey=yourkey" target="_blank">Asah Otak</a><br>
+         ➠ <a href="/api/whoami?apikey=yourkey" target="_blank">Siapa Aku</a><br>
+         ➠ <a href="/api/whatword?apikey=yourkey" target="_blank">Susun Kata</a><br>
+         ➠ <a href="/api/whatflag?apikey=yourkey" target="_blank">Tebak Bendera</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/whatthis?apikey=yourkey" target="_blank">Tebak Kata</a><br>
+         ➠ <a href="/api/whatsong?apikey=yourkey" target="_blank">Tebak Lagu</a><br>
+         ➠ <a href="/api/tekateki?apikey=yourkey" target="_blank">Teka Teki</a>
+      </div>
+   </div>
+   <hr>
+   <h2> Image Effect </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/effect?style=alien&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Alien</a><br>
+         ➠ <a href="/api/effect?style=brick&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Brick</a><br>
+         ➠ <a href="/api/effect?style=bunny&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Bunny Ears</a><br>
+         ➠ <a href="/api/effect?style=caricature&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Caricature</a><br>
+         ➠ <a href="/api/effect?style=clown&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Clown</a><br>
+         ➠ <a href="/api/effect?style=latte&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Latte Art</a><br>
+         ➠ <a href="/api/effect?style=letter&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Letter</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/effect?style=ink&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Ink Portait</a><br>
+         ➠ <a href="/api/effect?style=pencil&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Pencil</a><br>
+         ➠ <a href="/api/effect?style=puzzle&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Puzzle</a><br>
+         ➠ <a href="/api/effect?style=roses&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Roses</a><br>
+         ➠ <a href="/api/effect?style=sketch&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Sketch</a><br>
+         ➠ <a href="/api/effect?style=splash&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Splash Colour</a><br>
+         ➠ <a href="/api/effect?style=staco&image=https://telegra.ph/file/7cc74d27d652ae29ce2ca.jpg&apikey=yourkey" target="_blank">Staco</a>
+      </div>
+   </div>
+   <hr>
+   <h2> Image Maker </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/blackpink?text=neoxr&apikey=yourkey" target="_blank">Blackpink</a><br>
+         ➠ <a href="/api/blood?text=neoxr&apikey=yourkey" target="_blank">Blood</a><br>
+         ➠ <a href="/api/breakwall?text=neoxr&apikey=yourkey" target="_blank">Breakwall</a><br>
+         ➠ <a href="/api/glow?text=neoxr&apikey=yourkey" target="_blank">Glow</a><br>
+         ➠ <a href="/api/joker?text=neoxr&apikey=yourkey" target="_blank">Joker</a><br>
+         ➠ <a href="/api/magma?text=neoxr&apikey=yourkey" target="_blank">Magma</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/matrix?text=neoxr&apikey=yourkey" target="_blank">Matrix</a><br>
+         ➠ <a href="/api/multicolor?text=neoxr&apikey=yourkey" target="_blank">Multi Color</a><br>
+         ➠ <a href="/api/neon?text=neoxr&apikey=yourkey" target="_blank">Neon</a><br>
+         ➠ <a href="/api/papercut?text=neoxr&apikey=yourkey" target="_blank">Papercut</a><br>
+         ➠ <a href="/api/slice?text=neoxr&apikey=yourkey" target="_blank">Slice</a>
+      </div>
+   </div>
+   <hr>
+   <h2> Primbon </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/artinama?nama=wildan&apikey=yourkey" target="_blank">Arti Nama</a><br>
+         ➠ <a href="/api/jodoh?nama1=jokowi&nama2=megawati&apikey=yourkey" target="_blank">Jodoh</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/nikah?tgl=15&bln=07&thn=2004&apikey=yourkey" target="_blank">Nikah</a><br>
+         ➠ <a href="/api/mimpi?q=belanja&apikey=yourkey" target="_blank">Tafsir Mimpi</a>
+      </div>
+   </div>
+   <hr>
+   <h2> Searching </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/anime?q=digimon&apikey=yourkey" target="_blank">Anime</a><br>
+         ➠ <a href="/api/anime-get?url=https://62.182.83.93/2022/06/digimon-ghost-game-episode-29/&apikey=yourkey" target="_blank">Anime (Get)</a><br>
+         ➠ <a href="/api/drakor?q=the%20k2&apikey=yourkey" target="_blank">Drakor</a><br>
+         ➠ <a href="/api/drakor-get?url=https://drakorasia.us/drakor-live-up-to-your-name-episode-01-16-batch/&apikey=yourkey" target="_blank">Drakor (Get)</a><br>
+         ➠ <a href="/api/film?q=dominion&apikey=yourkey" target="_blank">Film</a><br>
+         ➠ <a href="/api/film-get?url=http://167.99.64.64/jurassic-world-dominion-2022/&apikey=yourkey" target="_blank">Film (Get)</a><br>
+         ➠ <a href="/api/sticker?q=bears&apikey=yourkey" target="_blank">Get Sticker</a><br>
+         ➠ <a href="/api/sticker-get?url=https://getstickerpack.com/stickers/5-6328062156587663481&apikey=yourkey" target="_blank">Get Sticker (Get)</a><br>
+         ➠ <a href="/api/gore-search?q=isis&apikey=yourkey" target="_blank">Gore</a><br>
+         ➠ <a href="/api/gore-get?url=https://seegore.com/free-fall-stopped-falling-but-a-boy-didnt/&apikey=yourkey" target="_blank">Gore (Get)</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/pinterest?q=hosico&apikey=yourkey" target="_blank">Pinterest</a><br>
+         ➠ <a href="/api/resep?q=ayam&apikey=yourkey" target="_blank">Resep</a><br>
+         ➠ <a href="/api/rexdl?q=vpn&apikey=yourkey" target="_blank">Rexdl</a><br>
+         ➠ <a href="/api/rexdl-get?url=https://rexdl.com/android/easy-vpn-apk.html/&apikey=yourkey" target="_blank">Rexdl (Get)</a><br>
+         ➠ <a href="/api/swiki?q=bears&apikey=yourkey" target="_blank">Sticker Wiki</a><br>
+         ➠ <a href="/api/swiki-get?url=https://stickers.wiki/whatsapp/animated_bears/&apikey=yourkey" target="_blank">Sticker Wiki (Get)</a><br>
+         ➠ <a href="/api/wallpaper2?q=anime&apikey=yourkey" target="_blank">Wallpaper</a>
+         ➠ <a href="/api/wallpaper?q=bmw&apikey=yourkey" target="_blank">Wallpaper HD</a>
+      </div>
+   </div>
+   <hr>
+   <h2> Tools </h2>
+   <div class="grid">
+      <div class="col-6">
+         ➠ <a href="/api/check/yourkey" target="_blank">Apikey Checker</a><br>
+         ➠ <a href="/api/emoji?q=😳_😩&apikey=yourkey" target="_blank">Emoji Mix</a><br>
+         ➠ <a href="/api/ghstalk?username=neoxr&apikey=yourkey" target="_blank">Github Stalker</a><br>
+         ➠ <a href="/api/igstalk?username=neoxr&apikey=yourkey" target="_blank">Instagram Stalker</a><br>
+         ➠ <a href="/api/sholat?q=cianjur&apikey=yourkey" target="_blank">Jadwal Sholat</a><br>
+         ➠ <a href="/api/ss?url=http://nxr.my.id&apikey=yourkey" target="_blank">Screenshot Desktop</a>
+      </div>
+      <div class="col-6">
+         ➠ <a href="/api/sshp?url=http://nxr.my.id&apikey=yourkey" target="_blank">Screenshot Mobile</a><br>
+         ➠ <a href="/api/telesticker?url=https://t.me/addstickers/NonromanticBear&apikey=yourkey" target="_blank">Telesticker</a><br>
+         ➠ <a href="/api/shorten?url=https://www.instagram.com/reel/Cb4gl6opmWI/?utm_medium=copy_link&apikey=yourkey" target="_blank">URL Shortener</a><br>
+         ➠ <a href="/api/urban?q=yntkts&apikey=yourkey" target="_blank">Urban Dictionary</a><br>
+         ➠ <a href="/api/whatanime?url=https://telegra.ph/file/0118bd8bb42e7952e420e.jpg&apikey=yourkey" target="_blank">What Anime</a>
+      </div>
+   </div>
+</div>
+<div class="col-5_sm-12">
+   <h2>Developer Info</h2>
+<div class="dev">
+   <table>
+      <tbody><tr><td>
+         <div class="ic">乂</div>
+      </td>
+      <td><b>Collaborative Blog</b><br><small><a href="https://neoxr.my.id">https://neoxr.my.id</a></small></td>
+      </tr><tr>
+      <td>
+         <div class="ic">乂</div>
+      </td>
+      <td><b>Facebook</b><br><small><a href="/cdn-cgi/l/email-protection#f99a96978d989a8db9979c96818bd79480d7909d">fb.com/neoxr</a></small></td>
+      </tr><tr>
+         <td>
+            <div class="ic">乂</div>
+         </td>
+         <td><b>Instagram</b><br><small><a href="https://s.nxr.my.id/r/q34ik">instagram.com/neoxrs</a></small></td>
+      </tr><tr>
+         <td>
+            <div class="ic">乂</div>
+         </td>
+         <td><b>E-mail</b><br><small><a href="/cdn-cgi/l/email-protection#34575b5a40555740745a515b4c461a594d1a5d50"><span class="__cf_email__" data-cfemail="0764686973666473476962687f75296a7e296e63">[email protected]</span></a></small></td>
+      </tr><tr>
+         <td>
+            <div class="ic">乂</div>
+         </td>
+         <td><b>Community</b><br><small><a href="https://s.nxr.my.id/r/q34ik">nxr.my.id/q34ik</a></small></td>
+      </tr><tr>
+         <td>
+            <div class="ic">乂</div>
+         </td>
+         <td><b>WhatsApp Bot</b><br><small><a href="https://wa.me/6285797117956?text=.menu">+62 857-9711-7956</a> <span class="status-true">[ ON ]</span></small></td>
+
+   </tr></tbody></table>
+
+
+</div>
+
+<h2>Quick Links</h2>
+<div class="grid">
+
+   <div class="col-6">
+      ➠ <a href="https://saweria.co/neoxr">Donate</a><br>
+      ➠ <a href="/api">API List</a><br>
+      ➠ <a href="/api/wrapper">API Wrapper</a>
+   </div>
+   <div class="col-6">
+      ➠ <a href="/pricing">Pricing</a><br>
+      
+   </div>
+
+</div>
+
+<h2>Key Checker</h2>
+<div id="keyNotif"></div>
+<form id="app-check-key" method="post">
+<table>
+   <tbody><tr><td><input type="text" name="apikey" id="apikey" class="bax" placeholder="Your Key Here">              <span class="highlight"></span>
+                  <span class="bar"></span></td>
+   <td><button class="btn"> Check </button></td>
+</tr></tbody></table>
+</form>
+</div>
+</div>
+<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/script.js" type="text/javascript"></script>
+</div>
+   <footer>© Neoxr Network</footer>
+
+</body></html>
